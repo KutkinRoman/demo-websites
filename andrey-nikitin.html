@@ -76,6 +76,9 @@
   .facts{ display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--line); }
   .video-frame{ border-radius:10px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:#000; }
   .video-frame iframe{ width:100%; aspect-ratio:16/9; display:block; border:0; }
+  .video-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .video-grid .video-caption{ margin-top:8px; font-size:13px; color:var(--ink-soft); }
+  @media (max-width:640px){ .video-grid{ grid-template-columns:1fr; } }
   .facts div{ padding:14px 0; border-bottom:1px solid var(--line); }
   .facts dt{ font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px; }
   .facts dd{ margin:0; font-weight:600; font-size:15px; }
@@ -136,7 +139,19 @@
 
   <section>
     <h2>Видео о вакансии</h2>
-    <div class="video-frame"><iframe src="https://www.youtube.com/embed/xEM2I-M29Es" title="Нотариус Никитин А.В. — вакансия помощника" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    <div class="video-grid">
+      <div>
+        <div class="video-frame"><iframe src="https://www.youtube.com/embed/xEM2I-M29Es" title="Нотариус Никитин А.В. — вакансия помощника" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <div class="video-frame"><iframe src="https://www.youtube.com/embed/llxrzbmPdVo" title="Нотариус Никитин А.В. — вакансия помощника, видео 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как проехать</h2>
+    <div class="video-frame"><iframe src="https://www.youtube.com/embed/wFtvWXpVidI" title="Нотариус Никитин А.В. — как проехать в контору" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
   </section>
 
   <footer>
