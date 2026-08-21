@@ -1,0 +1,100 @@
+<meta charset="UTF-8">
+<title>AlmaJob — тестовые сайты</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5F4F1; --card:#FFFFFF; --ink:#1B1B18; --ink-soft:#605E56;
+    --line:#E2DFD6; --shadow: 0 1px 2px rgba(27,27,24,0.05), 0 10px 26px -16px rgba(27,27,24,0.2);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131210; --card:#1A1917; --ink:#EDEBE5; --ink-soft:#A6A296;
+      --line:#2B2926; --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 26px -16px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131210; --card:#1A1917; --ink:#EDEBE5; --ink-soft:#A6A296;
+    --line:#2B2926; --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 26px -16px rgba(0,0,0,0.6);
+  }
+  *{box-sizing:border-box;}
+  body{ margin:0; background:var(--paper); color:var(--ink); font-family:"IBM Plex Sans",ui-sans-serif,system-ui,sans-serif; line-height:1.55; }
+  .mono{ font-family:"IBM Plex Mono",ui-monospace,monospace; }
+  .wrap{ max-width:920px; margin:0 auto; padding:64px 28px 80px; }
+  .eyebrow{ font-size:12.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-soft); margin-bottom:14px; }
+  h1{ font-size:clamp(30px,5vw,42px); margin:0 0 12px; }
+  .lede{ color:var(--ink-soft); font-size:16px; max-width:60ch; margin:0 0 48px; }
+
+  .group{ margin-bottom:44px; }
+  .group h2{ font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 16px; }
+  .cards{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  a.card{
+    display:flex; flex-direction:column; gap:6px; text-decoration:none; color:var(--ink);
+    background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px;
+    box-shadow:var(--shadow); transition:transform .15s ease;
+  }
+  a.card:hover{ transform:translateY(-2px); }
+  a.card .name{ font-size:17px; font-weight:600; }
+  a.card .role{ font-size:13.5px; color:var(--ink-soft); }
+  a.card .file{ margin-top:8px; font-size:11.5px; color:var(--ink-soft); }
+
+  footer{ margin-top:20px; padding-top:24px; border-top:1px solid var(--line); font-size:12.5px; color:var(--ink-soft); }
+  @media (max-width:600px){ .cards{ grid-template-columns:1fr; } }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">AlmaJob · тестовые данные</div>
+  <h1>Каталог тестовых сайтов</h1>
+  <p class="lede">Сайты-визитки работодателей и портфолио соискателей, сгенерированные для тестирования платформы AlmaJob.</p>
+
+  <div class="group">
+    <h2>Работодатели</h2>
+    <div class="cards">
+      <a class="card" href="altyn-dala-logistics.html">
+        <span class="name">Алтын Дала Логистикс</span>
+        <span class="role">Логистика и грузоперевозки</span>
+        <span class="file mono">altyn-dala-logistics.html</span>
+      </a>
+      <a class="card" href="qaztech-solutions.html">
+        <span class="name">QazTech Solutions</span>
+        <span class="role">Продуктовая IT-компания</span>
+        <span class="file mono">qaztech-solutions.html</span>
+      </a>
+      <a class="card" href="talentpro-kazakhstan.html">
+        <span class="name">TalentPro Kazakhstan</span>
+        <span class="role">Кадровое агентство</span>
+        <span class="file mono">talentpro-kazakhstan.html</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Частная практика</h2>
+    <div class="cards">
+      <a class="card" href="andrey-nikitin.html">
+        <span class="name">Андрей Никитин</span>
+        <span class="role">Частнопрактикующий нотариус</span>
+        <span class="file mono">andrey-nikitin.html</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="group">
+    <h2>Соискатели</h2>
+    <div class="cards">
+      <a class="card" href="dmitry-sokolov.html">
+        <span class="name">Дмитрий Соколов</span>
+        <span class="role">Диспетчер логистического отдела</span>
+        <span class="file mono">dmitry-sokolov.html</span>
+      </a>
+      <a class="card" href="nurlan-zhandosov.html">
+        <span class="name">Нурлан Жандосов</span>
+        <span class="role">Frontend-разработчик</span>
+        <span class="file mono">nurlan-zhandosov.html</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>Тестовые данные для платформы AlmaJob. Ни одна из компаний и ни один из людей не существуют в реальности.</footer>
+</div>
