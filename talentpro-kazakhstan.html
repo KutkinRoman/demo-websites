@@ -114,6 +114,10 @@
   .section-head p{ color:var(--ink-soft); font-size:14.5px; max-width:40ch; margin:0; }
 
   .about-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; }
+  .video-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+  .video-frame{ border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:#000; }
+  .video-frame iframe{ width:100%; aspect-ratio:16/9; display:block; border:0; }
+  .video-caption{ margin-top:10px; font-size:13.5px; color:var(--ink-soft); }
   .about-grid p{ color:var(--ink-soft); font-size:15.5px; }
   .about-grid p + p{ margin-top:14px; }
   .facts{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line); }
@@ -189,6 +193,25 @@
         <li><span>Руководитель</span><span>Сатпаева Г. Е.</span></li>
         <li><span>Сфера</span><span>Рекрутинг, HR-консалтинг</span></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section id="video">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Видео</h2>
+      <p>О компании и как нас найти</p>
+    </div>
+    <div class="video-grid">
+      <div>
+        <div class="video-frame"><iframe src="https://www.youtube.com/embed/QjN1TcTnwTE" title="TalentPro Kazakhstan — о компании" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <p class="video-caption">О компании</p>
+      </div>
+      <div>
+        <div class="video-frame"><iframe src="https://www.youtube.com/embed/25g89KihLrM" title="TalentPro Kazakhstan — как проехать в офис" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+        <p class="video-caption">Как проехать в офис</p>
+      </div>
     </div>
   </div>
 </section>

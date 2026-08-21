@@ -63,6 +63,8 @@
 
   .tags{ display:flex; flex-wrap:wrap; gap:8px; }
   .tag{ background:var(--card); border:1px solid var(--line); color:var(--ink); font-size:13px; padding:7px 12px; border-radius:7px; box-shadow:var(--shadow); }
+  .video-frame{ border-radius:10px; overflow:hidden; box-shadow:var(--shadow); background:#000; max-width:420px; }
+  .video-frame iframe{ width:100%; aspect-ratio:16/9; display:block; border:0; }
   .tag.mono{ color:var(--accent-2); }
 
   .lang-row{ display:flex; flex-direction:column; gap:10px; margin-top:20px; }
@@ -145,6 +147,11 @@
       <span class="tag">Переговоры</span>
       <span class="tag">Стрессоустойчивость</span>
     </div>
+  </div>
+
+  <div>
+    <h2 class="label">Видеорезюме</h2>
+    <div class="video-frame"><iframe src="https://www.youtube.com/embed/G02j6eyYvR8" title="Дмитрий Соколов — видеорезюме" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
   </div>
 
   <footer>

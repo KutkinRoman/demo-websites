@@ -74,6 +74,8 @@
   .articles li span{ display:block; color:var(--ink-soft); font-size:14.5px; margin-top:3px; }
 
   .facts{ display:grid; grid-template-columns:1fr 1fr; gap:0; border-top:1px solid var(--line); }
+  .video-frame{ border-radius:10px; overflow:hidden; border:1px solid var(--line); box-shadow:var(--shadow); background:#000; }
+  .video-frame iframe{ width:100%; aspect-ratio:16/9; display:block; border:0; }
   .facts div{ padding:14px 0; border-bottom:1px solid var(--line); }
   .facts dt{ font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 4px; }
   .facts dd{ margin:0; font-weight:600; font-size:15px; }
@@ -130,6 +132,11 @@
       <div><dt>Часы приёма</dt><dd>Пн–Пт, 09:00–18:00</dd></div>
       <div><dt>Стаж</dt><dd>17 лет</dd></div>
     </dl>
+  </section>
+
+  <section>
+    <h2>Видео о вакансии</h2>
+    <div class="video-frame"><iframe src="https://www.youtube.com/embed/xEM2I-M29Es" title="Нотариус Никитин А.В. — вакансия помощника" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
   </section>
 
   <footer>
