@@ -135,6 +135,30 @@
   .service h3{ font-size:17px; margin:0; font-weight:600; }
   .service p{ margin:0; font-size:14px; color:var(--ink-soft); }
 
+  .jobs{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .job{
+    background:var(--card); border:1px solid var(--line); border-radius:12px;
+    padding:24px; box-shadow:var(--shadow);
+    display:flex; flex-direction:column; gap:10px;
+  }
+  .job-top{ display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
+  .job h3{ font-size:17px; margin:0; font-weight:600; }
+  .job-tag{
+    font-size:11px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase;
+    background:var(--accent-soft); color:var(--accent); padding:4px 9px; border-radius:100px;
+    white-space:nowrap;
+  }
+  .job-meta{ font-size:13px; color:var(--ink-soft); }
+  .job-foot{ margin-top:2px; display:flex; justify-content:space-between; align-items:center; }
+  .job-foot .salary{ font-family:"Big Shoulders Display",sans-serif; font-weight:700; font-size:19px; }
+  .job-foot .apply{ font-size:13px; color:var(--accent); font-weight:600; }
+  .job-video summary{ cursor:pointer; list-style:none; font-size:13px; font-weight:600; color:var(--accent); display:flex; align-items:center; gap:6px; user-select:none; }
+  .job-video summary::-webkit-details-marker{ display:none; }
+  .job-video summary::before{ content:"▶"; font-size:9px; transition:transform .15s ease; }
+  .job-video[open] summary::before{ transform:rotate(90deg); }
+  .job-video .video-frame{ margin-top:10px; border-radius:10px; }
+  .job-video .video-frame iframe{ aspect-ratio:16/9; }
+
   footer{ padding:40px 0; }
   .foot-row{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; font-size:13.5px; color:var(--ink-soft); }
 </style>
@@ -148,6 +172,7 @@
     <nav class="links">
       <a href="#about">О компании</a>
       <a href="#services">Услуги</a>
+      <a href="#jobs">Вакансии</a>
       <a href="#contact">Контакты</a>
     </nav>
   </div>
@@ -227,6 +252,47 @@
       <div class="service"><span class="num display">02</span><h3>Executive search</h3><p>Точечный поиск руководителей и редких специалистов.</p></div>
       <div class="service"><span class="num display">03</span><h3>HR-аутсорсинг</h3><p>Передача части HR-функций на нашу команду.</p></div>
       <div class="service"><span class="num display">04</span><h3>Оценка кандидатов</h3><p>Тестирование и структурированные интервью.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="display">Открытые вакансии</h2>
+      <p>Часть позиций — от имени клиентов агентства</p>
+    </div>
+    <div class="jobs">
+      <div class="job">
+        <div class="job-top"><h3>Главный бухгалтер</h3><span class="job-tag">Полный день</span></div>
+        <div class="job-meta">Алматы · опыт главным бухгалтером от 5 лет</div>
+        <div class="job-foot"><span class="salary">от 600 000 ₸</span><span class="apply">Откликнуться →</span></div>
+        <details class="job-video"><summary>Видео о вакансии</summary><div class="video-frame"><iframe src="https://www.youtube.com/embed/Ac8_i0Um1zA" title="Главный бухгалтер — видео о вакансии" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></details>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Прораб / Рук. строит. проектов</h3><span class="job-tag">Разъездной</span></div>
+        <div class="job-meta">Алматы · опыт в строительстве от 5 лет</div>
+        <div class="job-foot"><span class="salary">от 500 000 ₸</span><span class="apply">Откликнуться →</span></div>
+        <details class="job-video"><summary>Видео о вакансии</summary><div class="video-frame"><iframe src="https://www.youtube.com/embed/200Aabn7hVc" title="Прораб — видео о вакансии" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></details>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Маркетолог</h3><span class="job-tag">Гибрид</span></div>
+        <div class="job-meta">Алматы · опыт в маркетинге от 3 лет</div>
+        <div class="job-foot"><span class="salary">от 400 000 ₸</span><span class="apply">Откликнуться →</span></div>
+        <details class="job-video"><summary>Видео о вакансии</summary><div class="video-frame"><iframe src="https://www.youtube.com/embed/tkfDrDc8Ick" title="Маркетолог — видео о вакансии" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></details>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Управляющий рестораном</h3><span class="job-tag">Гибкий график</span></div>
+        <div class="job-meta">Алматы · опыт управляющим от 3 лет</div>
+        <div class="job-foot"><span class="salary">от 450 000 ₸ + бонусы</span><span class="apply">Откликнуться →</span></div>
+        <details class="job-video"><summary>Видео о вакансии</summary><div class="video-frame"><iframe src="https://www.youtube.com/embed/sZTRVN9iIKM" title="Управляющий рестораном — видео о вакансии" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></details>
+      </div>
+      <div class="job">
+        <div class="job-top"><h3>Менеджер по продажам (B2B)</h3><span class="job-tag">Оклад + %</span></div>
+        <div class="job-meta">Алматы · опыт в B2B-продажах от 2 лет</div>
+        <div class="job-foot"><span class="salary">от 350 000 ₸ + %</span><span class="apply">Откликнуться →</span></div>
+        <details class="job-video"><summary>Видео о вакансии</summary><div class="video-frame"><iframe src="https://www.youtube.com/embed/grEq1h6GQrg" title="Менеджер по продажам — видео о вакансии" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div></details>
+      </div>
     </div>
   </div>
 </section>
